@@ -1,0 +1,19 @@
+@use '../scss/_custom.scss' as *;
+
+.custom-navbar {
+  .custom-navbar-nav {
+    a {
+      color: $dark;
+      cursor: pointer;
+      padding: 30px 15px;
+      -webkit-transition: all 0.35s ease;
+      -moz-transition: all 0.35s ease;
+      -ms-transition: all 0.35s ease;
+      -o-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

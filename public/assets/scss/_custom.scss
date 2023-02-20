@@ -1,0 +1,80 @@
+$font-family-title: 'Handlee', cursive;
+$font-family-content: 'Nunito', sans-serif;
+$font-family-base: $font-family-content;
+$headings-font-family: $font-family-title;
+
+$first: #17a2b8;
+$black: #000;
+$text: #00394f;
+
+$white: #fff;
+$light: $white;
+$dark: $black;
+$primary: $first;
+$secondary: $text;
+$body-color: $text;
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $primary;
+  span {
+    position: relative;
+    background: #fff;
+    z-index: 1;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $primary;
+  }
+}
+.team {
+  img {
+    width: 20rem;
+    height: 15rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($primary, 0.5);
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.social-links {
+  .social-link {
+    &:hover {
+      background: $dark;
+    }
+    i {
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,1000&display=swap');
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
